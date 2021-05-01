@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("console.log(\"hello worlds!\");\n\n//# sourceURL=webpack://dropdown_menu/./src/index.js?");
+eval("function showMenu(dropdownToggle, itemsId) {\r\n    const toggleBtn = document.getElementById(dropdownToggle);\r\n    const items = document.getElementById(itemsId);\r\n    const arrow = document.querySelector('.arrow');\r\n\r\n    if(dropdownToggle && itemsId){\r\n        toggleBtn.addEventListener('click', ()=>{\r\n            items.classList.toggle('hidden');\r\n            arrow.classList.toggle('rotate');\r\n        })\r\n    }\r\n}\r\n\r\n\r\nshowMenu('1','2')\n\n//# sourceURL=webpack://dropdown_menu/./src/index.js?");
 
 /***/ })
 
